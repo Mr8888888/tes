@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import Image from "next/image";
 
 export default function Home({ allPostsData }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>[jEVON M]</p>
+        <Image priority src="/images/tes.png" className={utilStyles.borderCircle} height={108} width={108} />
         <p>
           (This is a sample website - you’ll be building a site like this in <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
